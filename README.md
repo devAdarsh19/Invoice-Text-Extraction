@@ -12,3 +12,12 @@
   ```
   python -m venv <your_virtual_env_name>
   ```
+- Activate the virtual environment with:
+  ```
+  <your_virtual_env_name>/Scripts/activate
+  ```
+- Install requirements
+  ```
+  pip install -r requirements.txt
+  ```
+  
