@@ -50,7 +50,7 @@ Datasets obtained from 0325updated.task1train(626p) folder
 
 ## Pipeline
 
-### File - text_extractor.ipynb
+### <ins>File - text_extractor.ipynb</ins>
 ### Image Preprocessing
 - Converting to grayscale
 - Using adaptive thresholding to enhance visibility and improve the quality of OCR output
@@ -65,7 +65,7 @@ Datasets obtained from 0325updated.task1train(626p) folder
 ### Regex for field extraction (Inefficient)
 - Extracting store name, date, invoice number, and total amount using regex patterns
 
-### File - nlp_demo.ipynb
+### <ins>File - nlp_demo.ipynb</ins>
 ### Model training
 - Load the English model
 - Provide training data in an appropriate format
