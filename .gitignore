@@ -1,3 +1,5 @@
 train_datasets/
 invoice_ner_model/
 .venv/
+backend/__pycache__
+frontend/node_modules
