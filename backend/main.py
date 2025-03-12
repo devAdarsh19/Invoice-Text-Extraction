@@ -74,7 +74,7 @@ def upload_analyze_invoice(file: UploadFile = File(...)):
     
     for line in info_text.split("\n"):
         fieldnames = ["Organization Name", "Invoice Number", "Date", "Total Amount"]
-        key, *value = line.split(":")
+        key, *value = line.split(":", 1)
         if key.strip() in fieldnames:
             invoice_info_dict[key.strip()] = ', '.join(value)
         

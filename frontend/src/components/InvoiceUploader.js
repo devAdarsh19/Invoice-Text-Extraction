@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FileUploader } from "react-drag-drop-files";
 import axios from "axios";
 
-const filetypes = ["PNG", "JPG"]
+const filetypes = ["PNG", "JPG"];
 
 const InvoiceUploader = ({ setInvoiceData }) => {
   const [file, setFile] = useState(null);
@@ -29,7 +29,7 @@ const InvoiceUploader = ({ setInvoiceData }) => {
       );
 
       if (response.status !== 200) {
-        throw new Error(`HTTP Error | Error code : ${response.status}`)
+        throw new Error(`HTTP Error | Error code : ${response.status}`);
       }
 
       const data = await response.data;
@@ -43,16 +43,18 @@ const InvoiceUploader = ({ setInvoiceData }) => {
 
   return (
     <div>
-      <div className="invoice-uploader">
-        <FileUploader
-          handleChange={handleFileChange}
-          name="file"
-          types={filetypes}
-          error={loading ? "true" : undefined}
-        />
+      <div className="upload-container">
+        <div className="invoice-uploader">
+          <FileUploader
+            handleChange={handleFileChange}
+            name="file"
+            types={filetypes}
+            error={loading ? "true" : undefined}
+          />
         <button onClick={analyzeInvoice} disabled={loading}>
           {loading ? "Analyzing..." : "Upload"}
         </button>
+        </div>
       </div>
     </div>
   );
