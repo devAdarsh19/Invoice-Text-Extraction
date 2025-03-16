@@ -39,4 +39,16 @@
 ```
 pip install fastapi uvicorn
 ```
+## Running the frontend
+```
+cd frontend
+npm start
+```
+
+## Running the backend server
+```
+cd backend
+uvicorn main:app  --reload
+```
+
 
