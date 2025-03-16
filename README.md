@@ -16,9 +16,14 @@
   ```
   python -m venv <your_virtual_env_name>
   ```
-- Activate the virtual environment with:
+- Activate the virtual environment with (on Windows):
   ```
   <your_virtual_env_name>/Scripts/activate
+  ```
+  
+  On Mac/Linux:
+  ```
+  source <your_virtual_env_name>/Scripts/activate
   ```
 - Install requirements
   ```
