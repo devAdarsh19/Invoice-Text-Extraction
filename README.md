@@ -23,7 +23,7 @@
   
   On Mac/Linux:
   ```
-  source <your_virtual_env_name>/Scripts/activate
+  source <your_virtual_env_name>/bin/activate
   ```
 - Install requirements
   ```
